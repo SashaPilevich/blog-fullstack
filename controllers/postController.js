@@ -1,4 +1,4 @@
-const { Post, MyPost, User } = require("../models/models");
+const { Post } = require("../models/models");
 const ApiError = require("../error/ApiError");
 const uuid = require("uuid");
 const path = require("path");
@@ -9,9 +9,7 @@ class PostController {
       const { image } = req.files;
       let filename = uuid.v4() + ".jpg";
       image.mv(path.resolve(__dirname, "..", "static", filename));
-
       const post = await Post.create({ title, text, image: filename });
-
       return res.json(post);
     } catch (e) {
       next(ApiError.badRequest(e.message));
@@ -30,24 +28,5 @@ class PostController {
     const post = await Post.findOne({ where: { id } });
     return res.json(post);
   }
-  // async mypost(req, res, next) {
-  //   try {
-  //     let { title, text } = req.body;
-  //     const { image } = req.files;
-  //     // let { author } = User.findOne({ where: { id } });
-  //     let filename = uuid.v4() + ".jpg";
-  //     image.mv(path.resolve(__dirname, "..", "static", filename));
-
-  //     const post = await Post.create({
-  //       title,
-  //       text,
-  //       image: filename,
-  //     });
-
-  //     return res.json(post);
-  //   } catch (e) {
-  //     next(ApiError.badRequest(e.message));
-  //   }
-  // }
 }
 module.exports = new PostController();

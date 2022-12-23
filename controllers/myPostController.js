@@ -24,22 +24,14 @@ class myPostController {
   }
   async getUserPost(req, res) {
     const userId = req.query.id;
-    // const { userId } = req.params;
     const myPosts = await MyPost.findAll({ where: { userId } });
     return res.json(myPosts);
   }
   async getOne(req, res) {
     const id = req.params.id;
     const myPosts = await MyPost.findOne({ where: { id } });
-    // console.log(res.json(myPosts));
     return res.json(myPosts);
   }
-  // async getOne(req, res) {
-  //   const { id } = req.params;
-  //   const userId = req.query.id;
-  //   const myPost = await MyPost.findOne({ where: { userId, id } });
-  //   return res.json(myPost);
-  // }
   async deleteOne(req, res) {
     const id = req.params.id;
     const myPost = await MyPost.destroy({ where: { id } });

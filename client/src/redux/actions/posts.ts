@@ -1,5 +1,4 @@
 import { Dispatch } from "redux";
-import { fetchPosts } from "../../api/posts";
 import { IPost } from "../../types/post";
 import { ACTIONS } from "../constans";
 import { TState } from "../store";
@@ -22,18 +21,18 @@ export const setAllPosts = (posts: IPost[]) => {
 export const loadAllPosts = (searchText: string) => {
   return (dispatch: Dispatch, getState: () => TState) => {
     dispatch(setIsLoading(true));
-    fetchPosts(searchText)
-      .then((values) => {
-        if (values.count > values.results.length) {
-          dispatch(setShowLoadMore(true));
-        } else {
-          dispatch(setShowLoadMore(false));
-        }
-        dispatch(setAllPosts(values.results));
-      })
-      .finally(() => {
-        dispatch(setIsLoading(false));
-      });
+    // fetchPosts(searchText)
+    //   .then((values) => {
+    //     if (values.count > values.results.length) {
+    //       dispatch(setShowLoadMore(true));
+    //     } else {
+    //       dispatch(setShowLoadMore(false));
+    //     }
+    //     dispatch(setAllPosts(values.results));
+    //   })
+    //   .finally(() => {
+    //     dispatch(setIsLoading(false));
+    //   });
   };
 };
 
@@ -54,13 +53,13 @@ export const setShowLoadMore = (showLoadMore: boolean) => {
 export const loadMorePosts = (searchText: string) => {
   return (dispatch: Dispatch, getState: () => TState) => {
     const allPosts = getState().PostsReducer.allPosts;
-    const promise = fetchPosts(searchText, allPosts.length);
-    promise.then((values) => {
-      if (values.results.length + allPosts.length === values.count) {
-        dispatch(setShowLoadMore(false));
-      }
+    // const promise = fetchPosts(searchText, allPosts.length);
+    // promise.then((values) => {
+    //   if (values.results.length + allPosts.length === values.count) {
+    //     dispatch(setShowLoadMore(false));
+    //   }
 
-      dispatch(setAllPosts(allPosts.concat(values.results)));
-    });
+    //   dispatch(setAllPosts(allPosts.concat(values.results)));
+    // });
   };
 };

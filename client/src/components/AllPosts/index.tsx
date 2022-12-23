@@ -15,18 +15,6 @@ import { response } from "express";
 
 export const AllPosts = () => {
   const [posts, setPosts] = useState<IPost[]>([]);
-  // const posts = useSelector((state: TState) => state.PostsReducer.allPosts);
-  // const isLoading = useSelector(
-  //   (state: TState) => state.PostsReducer.isLoading
-  // );
-  // const showLoadMore = useSelector(
-  //   (state: TState) => state.PostsReducer.showLoadMore
-  // );
-  // const dispatch = useDispatch();
-
-  // const [searchText, setSearchText] = useState("");
-  // const [noPosts, setNoPosts] = useState(false);
-
   const { user, isDark } = useContext(Context);
 
   const navigate = useNavigate();

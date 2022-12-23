@@ -22,6 +22,4 @@ export const check = async (): Promise<IUser> => {
   const { data } = await $authHost.get("api/user/auth");
   localStorage.setItem("token", data.token);
   return jwt_decode(data.token);
-  // const response = await $authHost.get("api/user/auth");
-  // return response;
 };

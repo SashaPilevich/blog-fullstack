@@ -1,6 +1,5 @@
-import { $authHost, $host } from "./index";
-import axios from "axios";
-import jwt_decode from "jwt-decode";
+import { $host } from "./index";
+
 
 export const fetchPosts = async () => {
   const { data } = await $host.get("api/posts");
@@ -16,7 +15,6 @@ export const fetchMyPosts = async (id?: number) => {
   return data;
 };
 export const createPost = async (body: FormData) => {
-  // const { data } = await $postHost.post(`api/my_post/addpost`);
   return fetch("http://localhost:5000/api/my_post/addpost", {
     method: "POST",
     body: body,

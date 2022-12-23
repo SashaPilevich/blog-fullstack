@@ -8,7 +8,6 @@ import { Header } from "../../components/Header";
 import { IPost } from "../../types/post";
 import style from "./style.module.css";
 import { NotificationManager } from "react-notifications";
-import { removePost } from "../../api/posts";
 import { Preloader } from "../../components/Preloader";
 import { fetchPosts, selectPosts } from "../../http/postsApi";
 
@@ -29,14 +28,14 @@ export const SelectedPost = () => {
 
   const handleRemovePost = () => {
     if (post?.id) {
-      removePost(post.id).then((response) => {
-        if (response.ok) {
-          NotificationManager.success("Удаление поста", " Пост успешно удален");
-          navigate(-1);
-        } else {
-          NotificationManager.console.error("Удаление поста", "Пост не удален");
-        }
-      });
+      // removePost(post.id).then((response) => {
+      //   if (response.ok) {
+      //     NotificationManager.success("Удаление поста", " Пост успешно удален");
+      //     navigate(-1);
+      //   } else {
+      //     NotificationManager.console.error("Удаление поста", "Пост не удален");
+      //   }
+      // });
     }
   };
   return (

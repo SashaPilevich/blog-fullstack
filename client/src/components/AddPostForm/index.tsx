@@ -111,17 +111,11 @@ export const AddPostItem = ({
               onChange={(event) => setTitle(event.target.value)}
             />
           </label>
-          <label className={style.label}>
-            Lesson number
-            <Input
-              uniqType="inputForRegistration"
-              type="text"
-              value={lessonNum}
-              onChange={(event) => setLessonNum(event.target.value)}
-            />
-          </label>
+          
           <p className={`${style.textTextarea} `}>Text</p>
           <textarea
+          title="description"
+          placeholder="description"
             className={`${style.textarea} ${isDark ? style.darkTextarea : ""}`}
             value={text}
             onChange={(event) => setText(event.target.value)}
