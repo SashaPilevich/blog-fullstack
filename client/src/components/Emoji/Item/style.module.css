@@ -1,0 +1,25 @@
+.emojiItem {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border: 1px solid palevioletred;
+}
+.emojiItem:hover {
+  background-image: linear-gradient(
+    to right,
+    brown 0%,
+    rgb(178, 34, 80) 52%,
+    deeppink 100%
+  );
+  background-size: 200% auto;
+  transition: 0.5s;
+  background-position: right center;
+  color: white;
+  cursor: pointer;
+}
+.emojiSymbol {
+  padding: 30px;
+}
+.keywords {
+  text-align: right;
+}

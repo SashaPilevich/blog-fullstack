@@ -1,0 +1,8 @@
+.container {
+  margin: 20px auto;
+  width: 300px;
+  height: 150px;
+}
+.count {
+  font-size: 30px;
+}

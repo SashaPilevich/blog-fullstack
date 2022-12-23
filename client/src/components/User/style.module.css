@@ -1,0 +1,41 @@
+.mainContainer {
+  padding-top: 20px;
+}
+.userContainer,
+.darkUserContainer {
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 150px;
+  height: 40px;
+  background-color: #007bff;
+  color: white;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+.darkUserContainer {
+  background-color: white;
+  color: rgb(7, 67, 84);
+}
+.userShort,
+.darkUserShort {
+  width: 30px;
+  height: 30px;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  background-color: blue;
+  border-radius: 5px;
+  margin-right: 5px;
+  color: white;
+}
+.darkUserShort {
+  background-color: rgb(7, 67, 84);
+}
+.userDarkFull {
+  background-color: black;
+}
+.userDarkShort {
+  background-color: grey;
+}

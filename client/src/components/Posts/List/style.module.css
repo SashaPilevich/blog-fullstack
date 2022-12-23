@@ -1,0 +1,12 @@
+.container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 30px;
+  row-gap: 30px;
+  justify-items: center;
+  padding: 20px 60px;
+}
+.btnContainer {
+  display: flex;
+  margin-left: 20px;
+}
