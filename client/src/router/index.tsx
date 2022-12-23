@@ -1,7 +1,7 @@
 import { ReactNode, useContext } from "react";
 import { Route, Routes, Navigate } from "react-router-dom";
 import { Context } from "../App";
-import { Activation } from "../pages/Activation";
+
 import { AddPost } from "../pages/AddPost";
 // import { ConfirmPassword } from "../pages/ConfirmPassword";
 import { EditPost } from "../pages/EditPost";
@@ -21,7 +21,7 @@ export const RootRouter = () => {
       <Route path="/login" element={<LoginPage />} />
       <Route path="/registration" element={<RegistrationPage />} />
       {/* <Route path="/registersuccess" element={<RegisterSuccess />} /> */}
-      <Route path="/activate/:uid/:token" element={<Activation />} />
+     
       <Route path="/posts/:id" element={<SelectedPost />} />
       <Route path="/addpost" element={useLoginGuard(<AddPost />)} />
       <Route path="/my_post/:id" element={useLoginGuard(<MyPostPage />)} />

@@ -4,7 +4,6 @@ import { BrowserRouter } from "react-router-dom";
 import { RootRouter } from "./router";
 import userEvent from "@testing-library/user-event";
 import { IUser } from "./types/auth";
-import { getUser } from "./api/auth";
 import "react-notifications/lib/notifications.css";
 import { NotificationContainer } from "react-notifications";
 import { Preloader } from "./components/Preloader";

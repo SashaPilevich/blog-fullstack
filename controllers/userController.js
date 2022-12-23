@@ -6,7 +6,7 @@ function generateJwt(id, email, role) {
     expiresIn: "24h",
   });
 }
-const { User, MyPost } = require("../models/models");
+const { User} = require("../models/models");
 class UserController {
   async registration(req, res, next) {
     res.header("Access-Control-Allow-Origin");
@@ -40,9 +40,6 @@ class UserController {
     return res.json({ token });
   }
   async check(req, res) {
-    // const { email, password, id } = req.body;
-    // const user = await User.findOne({ where: { email, password, id } });
-    // return res.json(user);
     const token = generateJwt(req.user.id, req.user.email, req.user.role);
     return res.json({ token });
   }

@@ -1,6 +1,5 @@
 import { ChangeEventHandler, useContext, useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
-import { registerUser } from "../../api/auth";
 import { Context } from "../../App";
 import { registration } from "../../http/userApi";
 
