@@ -1,0 +1,10 @@
+.container {
+  background: #fff;
+  background-image: url("./mainBackground.png");
+  background-repeat: no-repeat;
+  background-position: right bottom;
+  background-size: contain;
+}
+.darkContainer {
+  background: rgb(7, 67, 84);
+}

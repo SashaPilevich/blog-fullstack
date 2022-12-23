@@ -1,0 +1,28 @@
+.container {
+  width: 1440px;
+  height: 1157px;
+  background: #ffffff;
+  border-radius: 25px;
+}
+.darkContainer {
+  background: rgb(7, 67, 84);
+}
+.selectedPost,
+.darkSelectedPost {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 45px;
+  line-height: 145.2%;
+  letter-spacing: 0.03em;
+  color: #016efc;
+  text-align: left;
+  margin-left: 112px;
+}
+.darkSelectedPost {
+  color: white;
+}
+.btnContainer {
+  display: flex;
+  margin-left: 120px;
+}

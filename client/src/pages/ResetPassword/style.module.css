@@ -1,0 +1,22 @@
+.link {
+  color: #016efc;
+}
+.darkLinkLogin {
+  color: goldenrod;
+  font-weight: 700;
+}
+.text,
+.darkText {
+  font-family: "Raleway";
+  font-weight: 400;
+  font-size: 25px;
+  line-height: 134%;
+  letter-spacing: 0.03em;
+  color: #254050;
+}
+.darkText {
+  color: whitesmoke;
+}
+.inputContainer {
+  text-align: left;
+}

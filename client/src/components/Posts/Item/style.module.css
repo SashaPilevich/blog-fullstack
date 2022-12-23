@@ -1,0 +1,72 @@
+.container {
+  width: 320px;
+  height: auto;
+  padding: 25px 21px 20px 20px;
+  margin-bottom: 30px;
+  background-color: white;
+  box-shadow: 0px 0px 50px 0px rgba(56, 58, 60, 0.15);
+  border-radius: 13px;
+  position: relative;
+}
+.largePost {
+  width: 400px;
+  height: auto;
+  background: #fdfdff;
+  border: 1px solid #ebebeb;
+  border-radius: 13px;
+  box-shadow: 0px 6px 50px rgba(184, 196, 209, 0.15);
+  margin-left: 115px;
+  margin-bottom: 30px;
+}
+.image {
+  width: 300px;
+  height: 250px;
+  margin: 0 auto;
+  border-radius: 10px;
+}
+.largeImage {
+  width: 400px;
+  height: 500px;
+  margin: 0 auto;
+}
+.title {
+  font-family: "Raleway";
+  font-weight: 600;
+  font-size: 20px;
+  text-align: left;
+  line-height: 23px;
+  color: #4f4f4f;
+  padding: 0 24px;
+}
+.text {
+  height: 20px;
+  font-family: "Raleway";
+  line-height: 19px;
+  text-align: left;
+  padding: 0 24px;
+  color: #979797;
+  overflow: hidden;
+}
+.largeText {
+  height: auto;
+  font-family: "Raleway";
+  line-height: 19px;
+  text-align: left;
+  padding: 0 24px;
+  color: #979797;
+  overflow: visible;
+}
+.date {
+  font-family: "Raleway";
+  font-weight: 400;
+  line-height: 19px;
+  text-align: left;
+  padding: 0 24px;
+  color: #016efc;
+  margin: 0;
+}
+.info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
