@@ -1,0 +1,78 @@
+.infoPanel {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.container {
+  display: flex;
+  align-items: center;
+}
+.btnAdd,
+.btnAddDark {
+  width: 110px;
+  height: 51px;
+  background: #007bff;
+  border: 4px solid #0077f7;
+  border-radius: 200px;
+  font-family: "Raleway";
+  font-weight: 500;
+  font-size: 25px;
+  line-height: 29px;
+  letter-spacing: 0.05em;
+  color: #ffffff;
+  margin-right: 420px;
+  cursor: pointer;
+}
+.btnAddDark {
+  background: white;
+  border: none;
+  color: rgb(7, 67, 84);
+}
+.title,
+.titleLogin,
+.darkTitleLogin,
+.darkTitle {
+  font-family: "Raleway";
+  font-weight: 700;
+  font-size: 45px;
+  line-height: 145.2%;
+  letter-spacing: 0.03em;
+  color: #016efc;
+  margin-right: 550px;
+  margin-left: 70px;
+}
+.darkTitleLogin,
+.darkTitle {
+  color: white;
+}
+.container .titleLogin {
+  margin-right: 30px;
+}
+.textSearch {
+  font-family: "Raleway";
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 145.2%;
+  letter-spacing: 0.03em;
+  color: #016efc;
+}
+.darkTextSearch {
+  font-family: "Raleway";
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 145.2%;
+  letter-spacing: 0.03em;
+  color: white;
+}
+.noPosts,
+.darkNoPost {
+  font-family: "Raleway";
+  font-weight: 700;
+  font-size: 45px;
+  line-height: 145.2%;
+  letter-spacing: 0.03em;
+  color: #016efc;
+}
+.darkNoPost {
+  color: white;
+}
